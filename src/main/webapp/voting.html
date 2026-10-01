@@ -1,0 +1,114 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Eligibility</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .gender {
+            margin-top: 10px;
+        }
+
+        .gender label {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4285f4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Voting Eligibility Form</h2>
+
+        <form action="VotingEligibleServlet" method="post">
+
+            <label>Voter Name</label>
+            <input type="text" name="voterName" required>
+
+            <label>Age</label>
+            <input type="number" name="age" required>
+
+            <label>Gender</label>
+
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="Male" required>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+            </div>
+
+            <label>City</label>
+            <input type="text" name="city" required>
+
+            <button type="submit">
+                Check Voting Eligibility
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+```

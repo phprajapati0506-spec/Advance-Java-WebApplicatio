@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 30px;
+            color: #4285f4;
+        }
+
+        form {
+            display: inline-flex;
+            width: 550px;
+            height: 45px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 0 15px;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            background: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #777;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Search</h1>
+
+        <form action="SearchGoogleResultServlet" method="get">
+            <input 
+                type="text" 
+                name="search"
+                placeholder="Search anything..."
+                autofocus
+            >
+
+            <button type="submit">🔍</button>
+        </form>
+
+        <p>Type something and press Enter to search</p>
+
+    </div>
+
+</body>
+</html>
+```
